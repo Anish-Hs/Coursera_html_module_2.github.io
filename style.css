@@ -4,17 +4,39 @@
 body{
 	margin: 0;
 }
-footer{
-	font-size: 20px;
-	text-align: center;
-	font-family: "Verdana";
-}
-div {
+
+#a,#b,#c {
 	margin: 1%;
 	background-color: #808080;
 	font-family: "Verdana";
 	border: 2.5px solid black;
 	float: left;
+}
+nav, div.container{
+	background-color: #000;
+	margin:0;
+	border:0;
+	font-weight: bold;
+	color: white;
+}
+button {
+	color: white;
+	float: right;
+}
+div.container{
+	float: left;
+	width: 50%;
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-collapse.in {
+    display: block !important;
+}
+.page-scroll{
+			color: white;
+			width: 100%;
+			margin: 0;
+			border: 0;
 }
 .Abc{
 		font-weight: bolder;
@@ -28,10 +50,10 @@ div {
 		font-weight: bolder;
 		text-align: top;
 		border: 2.5px solid black;
-		float: right;
+		float: left;
 		margin-top: -17px;
 		margin-bottom: 10px;
-		margin-right: -2px;
+		align-self: center;
 }
 .bcd {
 		background-color: #FFCC00;
@@ -44,27 +66,74 @@ div {
 }
 .bc,.cd,.de {
 		clear: right;
+		clear: left;
 		margin-left: 5%;
+		font-size: 20px;
 }
-
+li{
+	background-color: black;
+	color: white;
+}
+img{
+		clear: left;
+}
+.b1{
+	font-weight: bolder;
+	text-align: top;
+	border: 2.5px solid black;
+	float: left;
+	margin-top: -17px;
+	margin-bottom: 10px;
+	align-self: center;
+	background-color: #FF8800;
+	color: white;
+}
 <!--/***************Large Devices only*************/-->
 @media (min-width: 1200px){
 #a,#b,#c{
-		width:31.3%;	
+		width:98%;	
+		height: 98%;
+}
+button{
+	visibility: hidden;
 }
 }
 <!--/***************Medium Devices only*************/-->
-@media (min-width: 992px) and (max-width: 1199px){
-	 #a,#b{	
-	 	width:48%;
+@media (min-width: 800px) and (max-width: 1199px){
+	 #a,#b{
+	 margin-left: 10%;	
+	 width:80%;
 }
 #c{
-	width:98%;
+	margin-left: 10%;
+	width:80%;
+}
+button{
+	visibility: hidden;
 }
 }
 <!--/***************Small Devices only*************/-->
-@media (max-width: 991px){
+@media (max-width: 799px){
 	 #a,#b,#c{	
-		width:98%;
+	 	margin-left: 10%;
+		width:80%;
+}
+.b_c > img{
+		margin-bottom: 10%;
+		size: 5vw;
+}
+}
+
+@media (max-width: 350px){
+	 #a,#b,#c{	
+		width:90%;
+
+}
+div {
+	margin: 0;
+}
+.b_c > img{
+	margin-bottom: 10%;
+	size: 5vw;
 }
 }
